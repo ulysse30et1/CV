@@ -11,7 +11,11 @@ h2 {
 }
 
 p {
-    margin-left: 3%;
+    margin: 0 0 0 12%;
+}
+
+.barre {
+    margin: 10px 0 10px 0;
 }
 
 /* principaux conteneur */
@@ -49,15 +53,16 @@ p {
     border: 1px solid black;
     background-color: #45856F;
     margin-top: 3%;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: space-around;
+    align-items: center;
 }
 
 /* block du profil */
 .profil {
     display: flex;
-    height: 50%;
-    width: 30%;
+    height: 65%;
+    width: 35%;
     align-self: center;
 }
 
@@ -72,28 +77,66 @@ p {
     background-color: #45856F;
     margin-bottom: 3%;
 
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.pourcent1 {
+    height: 20px;
+    width: 20%;
+    background-color: chartreuse;
+}
+
+.pourcent2 {
+    height: 20px;
+    width: 40%;
+    background-color: chartreuse;
+}
+
+.pourcent3 {
+    height: 20px;
+    width: 60%;
+    background-color: chartreuse;
+}
+
+.pourcent4 {
+    height: 20px;
+    width: 80%;
+    background-color: chartreuse;
+}
+
+.pourcent5 {
+    height: 20px;
+    width: 100%;
+    background-color: chartreuse;
+}
+
+/* partie OS */
+.OS {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
 }
 
 .windows {
     height: 20px;
-    width: 80%;
-    background-color: #41D65E;
+    width: 99%;
+    border: 1px solid black;
 }
 
 .linux {
     height: 20px;
-    width: 80%;
-    background-color: #41D65E;
+    width: 99%;
+    border: 1px solid black;
 }
 
 .macOS {
     height: 20px;
-    width: 30%;
-    background-color: #41D65E;
+    width: 99%;
+    border: 1px solid black;
 }
 
-/* block langages */
+/* partie langages de programmation */
 .c {
     height: 20px;
     width: 50%;
@@ -118,9 +161,28 @@ p {
     background-color: #41D65E;
 }
 
-.php {    
+.php {
     height: 20px;
     width: 5%;
+    background-color: #41D65E;
+}
+
+/* partie logiciels */
+.VScode {
+    height: 20px;
+    width: 50%;
+    background-color: #41D65E;
+}
+
+.vim {
+    height: 20px;
+    width: 50%;
+    background-color: #41D65E;
+}
+
+.adobe_xd {
+    height: 20px;
+    width: 50%;
     background-color: #41D65E;
 }
 

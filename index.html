@@ -15,26 +15,143 @@
 </head>
 
 <body>
-    <div class="container">
-    <header>
-        <h1>CV | Ulysse Chazot</h1>
-        <p>171 chaussée st pierre 80000 Amiens</br> 06 52 64 10 81 </br>ulysse.chazot@gmail.com</br> 18 ans
-        </p>
-    </header>
+    <div class="cont bg-primary">
+        <!-- ===header=== -->
+        <header class="bg-dark ">
+            <h1>CV | Ulysse Chazot</h1>
+            <p> 171 chaussée st pierre 80000 Amiens</br>
+                06 52 64 10 81 </br>
+                ulysse.chazot@gmail.com</br>
+                18 ans</p>
+        </header>
 
-    <nav></nav>
+        <!-- ===menu de navigation=== -->
+        <nav class="navbar sticky-top navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
 
-    <div class="presentation"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div class="diplomes"></div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    <div class="compétances"></div>
+        <!-- ===simple presentation=== -->
+        <div class="presentation bg-dark">
+            <p>presentation perso</p>
+        </div>
 
-    <div class="interets"></div>
+        <!-- ===carousel des diplomes=== -->
+        <div id="diplomes" class=" carousel slide bg-dark" data-ride="carousel">
+            <!-- indicateur de position des tuiles -->
+            <ol class="carousel-indicators">
+                <li data-target="#diplomes" data-slide-to="0" class="active"></li>
+                <li data-target="#diplomes" data-slide-to="1"></li>
+                <li data-target="#diplomes" data-slide-to="2"></li>
+                <li data-target="#diplomes" data-slide-to="3"></li>
+                <li data-target="#diplomes" data-slide-to="4"></li>
+            </ol>
 
-    <div class="portfolio"></div>
+            <!-- contenus des tuiles -->
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center ">
+                    <p>test 1</p>
+                </div>
+                <div class="carousel-item">
+                    <p>test 2</p>
+                </div>
+                <div class="carousel-item">
+                    <p>test 3</p>
+                </div>
+                <div class="carousel-item">
+                    <p>test 4</p>
+                </div>
+                <div class="carousel-item">
+                    <p>test 5</p>
+                </div>
+            </div>
 
-    <footer></footer>
+            <!-- boutons de defilement du carousel -->
+            <a class="carousel-control-prev" href="#diplomes" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#diplomes" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- ===carousel des competances=== -->
+        <div id="compétances" class=" carousel slide bg-dark" data-ride="carousel">
+            <!-- indicateur de position des tuiles -->
+            <ol class="carousel-indicators">
+                <li data-target="#compétances" data-slide-to="0" class="active"></li>
+                <li data-target="#compétances" data-slide-to="1"></li>
+                <li data-target="#compétances" data-slide-to="2"></li>
+                <li data-target="#compétances" data-slide-to="3"></li>
+                <li data-target="#compétances" data-slide-to="4"></li>
+            </ol>
+
+            <!-- contenus des tuiles -->
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center ">
+                    <p>test 1</p>
+                </div>
+                <div class="carousel-item">
+                    <p>test 2</p>
+                </div>
+                <div class="carousel-item">
+                    <p>test 3</p>
+                </div>
+                <div class="carousel-item">
+                    <p>test 4</p>
+                </div>
+                <div class="carousel-item">
+                    <p>test 5</p>
+                </div>
+            </div>
+
+            <!-- boutons de defilement du carousel -->
+            <a class="carousel-control-prev" href="#compétances" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#compétances" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- ===partie centrre d'interets=== -->
+        <div class="interets bg-dark">
+            <p>mes centre d'intererts</p>
+            <p>insertion de logos ?(font awosom?)</p>
+        </div>
+
+        <!-- ===partie portfolio/presentation de mon travaille===  -->
+        <div class="portfolio bg-dark">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque minus dolorum placeat autem neque aut molestiae qui, repudiandae facilis aspernatur harum natus odio modi optio suscipit earum sapiente distinctio porro.</p>
+        </div>
+
+        <!-- ===footer liens vers les reseau sociaux -->
+        <footer class="bg-dark">
+            <p>fdesfgd</p>
+            <p>dfzf</p>
+        </footer>
 
     </div>
 

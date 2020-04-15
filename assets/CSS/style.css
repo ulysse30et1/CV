@@ -1,5 +1,6 @@
 /* configuaration pour un ecrant de smartphone */
-body{
+
+body {
     color: white;
     text-align: justify;
 }
@@ -24,62 +25,10 @@ body{
     ;
 }
 
-/* config pour les ecrants d'une largeur > a 500px */
-@media (min-width: 500px) {
-    .cont {
-
-        display: grid;
-        padding: 0px;
-
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
-        row-gap: 15px;
-
-        grid-template-areas: "head head"
-            "nav nav"
-            "pres pres"
-            "diplomes diplomes"
-            "competences competences"
-            "interets interets"
-            "portfolio portfolio"
-            "footer footer"
-        ;
-
-    }
-    
-}
-
-/* config pour les ecrants d'une largeur > a 1000px */
-@media (min-width: 1000px) {
-    .cont {
-
-        display: grid;
-        padding: 0px;
-
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
-        row-gap: 15px;
-
-        grid-template-areas: "head head"
-            "nav nav"
-            "pres pres"
-            "diplomes diplomes"
-            "competences competences"
-            "interets interets"
-            "portfolio portfolio"
-            "footer footer"
-        ;
-
-    }
-    
-}
-
 /* ===contenus du header=== */
 header {
     grid-area: head;
-    padding:0 10px 0 10px;
+    padding: 0 10px 0 10px;
 }
 
 /* ===contenus de la barre de nav=== */
@@ -89,7 +38,7 @@ nav {
 
 
 /* icone de retour sur la barre de nav */
-.ico-up{
+.ico-up {
     padding: 3px;
     border: white 2px solid;
 }
@@ -97,7 +46,7 @@ nav {
 /* ===contenus de la partie presentation=== */
 .presentation {
     grid-area: pres;
-    padding:0 15px 0 10px;
+    padding: 0 15px 0 10px;
 }
 
 
@@ -120,10 +69,88 @@ nav {
 
 /* ===contenus de la partie portfolio=== */
 .portfolio {
+    display: flex;
     grid-area: portfolio;
+
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* ===contenus de la partie footer=== */
 footer {
     grid-area: footer;
+}
+
+/* config pour les ecrants d'une largeur > a 576px  */
+@media (min-width: 567px) {
+    .cont {
+
+        display: grid;
+        padding: 0px;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        row-gap: 15px;
+
+        grid-template-areas: "head head"
+            "nav nav"
+            "pres pres"
+            "diplomes diplomes"
+            "competences competences"
+            "interets interets"
+            "portfolio portfolio"
+            "footer footer"
+        ;
+    }
+}
+
+/* config pour les ecrants d'une largeur > a 768px */
+@media (min-width: 768px) {
+    .cont {
+
+        display: grid;
+        padding: 0px;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        row-gap: 15px;
+
+        grid-template-areas: "head head"
+            "nav nav"
+            "pres pres"
+            "diplomes diplomes"
+            "competences competences"
+            "interets interets"
+            "portfolio portfolio"
+            "footer footer"
+        ;
+    }
+}
+
+/* config pour les ecrants d'une largeur > à 992px */
+@media (min-width: 992px) {
+    .cont {
+
+        display: grid;
+        padding: 0px;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        row-gap: 15px;
+
+        grid-template-areas: "head head"
+            "nav nav"
+            "pres pres"
+            "diplomes diplomes"
+            "competences competences"
+            "interets interets"
+            "portfolio portfolio"
+            "footer footer"
+        ;
+
+    }
+
 }

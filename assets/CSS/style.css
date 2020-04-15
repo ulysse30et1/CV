@@ -1,11 +1,16 @@
 /* configuaration pour un ecrant de smartphone */
+body{
+    color: white;
+    text-align: center;
+
+}
 
 .cont {
 
     display: grid;
     padding: 0px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto 1fr 1fr 1fr 1fr 1fr 20%;
+    grid-template-rows: 175px auto 1fr 200px 200px 1fr 1fr 20%;
 
     row-gap: 10px;
 
@@ -46,34 +51,74 @@
     
 }
 
+/* config pour les ecrants d'une largeur > a 1000px */
+@media (min-width: 1000px) {
+    .cont {
+
+        display: grid;
+        padding: 0px;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        row-gap: 15px;
+
+        grid-template-areas: "head head"
+            "nav nav"
+            "pres pres"
+            "diplomes diplomes"
+            "competances competances"
+            "interets interets"
+            "portfolio portfolio"
+            "footer footer"
+        ;
+
+    }
+    
+}
+
+/* ===contenus du header=== */
 header {
     grid-area: head;
 }
 
+/* ===contenus de la barre de nav=== */
 nav {
     grid-area: nav;
 }
 
+/* icone de retour sur la barre de nav */
+.ico-up{
+    padding: 3px;
+    border: white 2px solid;
+}
+
+/* ===contenus de la partie presentation=== */
 .presentation {
     grid-area: pres;
 }
 
+/* ===contenus de la partie diplomes=== */
 #diplomes {
     grid-area: diplomes;
 }
 
-#compétances {
+/* ===contenus de la partie compétences=== */
+#compétences {
     grid-area: competances;
 }
 
+/* ===contenus de la partie interets=== */
 .interets {
     grid-area: interets;
 }
 
+/* ===contenus de la partie portfolio=== */
 .portfolio {
     grid-area: portfolio;
 }
 
+/* ===contenus de la partie footer=== */
 footer {
     grid-area: footer;
 }

@@ -6,11 +6,15 @@ body {
     text-align: justify;
 }
 
+time {
+color: #5cb85c;
+}
+
 .cont {
     display: grid;
     padding: 0px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto 400px 400px auto auto auto;
+    grid-template-rows: auto auto auto 250px 400px auto auto auto;
 
     row-gap: 10px;
 

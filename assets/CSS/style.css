@@ -10,6 +10,10 @@ time {
 color: #5cb85c;
 }
 
+.text-title {
+
+}
+
 .cont {
     display: grid;
     padding: 0px;
@@ -54,7 +58,7 @@ nav {
 /* ===contenus de la partie presentation=== */
 .presentation {
     grid-area: pres;
-    padding: 0 15px 0 10px;
+    padding: 0 15px 0 15px;
 }
 
 
@@ -77,6 +81,19 @@ nav {
     grid-area: interets;
 }
 
+.carousel-item>p {
+    border: solid 1px;
+    margin: 5px 0px 5px 0px;
+}
+
+.progress {
+    margin-bottom: 25px;
+    background-color: #34495e;
+}
+
+h3 {
+    font-size: 17px;
+}
 /*===================================
 ===contenus de la partie portfolio===
 ===================================*/

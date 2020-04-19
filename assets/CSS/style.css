@@ -114,16 +114,18 @@ footer {
     align-items: center;
     font-size: 50px;
     display: flex;
-
-}
-.github {
-    color: darkgreen;
 }
 
-.linkedin {
+.github > a {
+    color: #7f8c8d;
 }
 
-.pdf {
+.linkedin > a {
+    color: #7f8c8d;
+}
+
+.pdf > a {
+    color: #7f8c8d;
 }
 
 /* config pour les ecrants d'une largeur > a 576px  */

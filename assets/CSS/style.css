@@ -18,7 +18,7 @@ color: #5cb85c;
     display: grid;
     padding: 0px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto 250px 400px auto auto auto;
+    grid-template-rows: auto auto auto 250px 400px auto auto 75px;
 
     row-gap: 10px;
 
@@ -81,8 +81,9 @@ nav {
     grid-area: interets;
 }
 
-.carousel-item>p {
+#compétences > .carousel-inner > .carousel-item > p {
     border: solid 1px;
+    border-radius: 20px;
     margin: 5px 0px 5px 0px;
 }
 
@@ -108,6 +109,21 @@ h3 {
 ================================*/
 footer {
     grid-area: footer;
+
+    justify-content: space-around;
+    align-items: center;
+    font-size: 50px;
+    display: flex;
+
+}
+.github {
+    color: darkgreen;
+}
+
+.linkedin {
+}
+
+.pdf {
 }
 
 /* config pour les ecrants d'une largeur > a 576px  */

@@ -7,12 +7,16 @@ body {
 }
 
 time {
-color: #5cb85c;
+    color: #5cb85c;
 }
 
-.text-title {
-
+h3 {
+    font-size: 17px;
 }
+
+/* ================================================ */
+/* config pour les ecrants d'une largeur > a 576px  */
+/* ================================================ */
 
 .cont {
     display: grid;
@@ -38,6 +42,7 @@ color: #5cb85c;
 ===================== */
 header {
     grid-area: head;
+    border-radius: 3px;
     padding: 0 10px 0 10px;
 }
 
@@ -46,6 +51,8 @@ header {
 ===============================*/
 nav {
     grid-area: nav;
+    border-radius: 3px;
+    box-shadow: 0px 10px 7px rgba(0,0,0, 0.3);
 }
 
 
@@ -65,23 +72,18 @@ nav {
 /* ===contenus de la partie diplomes=== */
 #diplomes {
     grid-area: diplomes;
+    border-radius: 3px;
     text-align: center;
 }
 
 /* ===contenus de la partie compétences=== */
 #compétences {
     grid-area: competences;
+    border-radius: 3px;
     text-align: center;
 }
 
-/*==================================
-===contenus de la partie interets=== 
-==================================*/
-.interets {
-    grid-area: interets;
-}
-
-#compétences > .carousel-inner > .carousel-item > p {
+#compétences>.carousel-inner>.carousel-item>p {
     border: solid 1px;
     border-radius: 20px;
     margin: 5px 0px 5px 0px;
@@ -92,15 +94,21 @@ nav {
     background-color: #34495e;
 }
 
-h3 {
-    font-size: 17px;
+/*==================================
+===contenus de la partie interets=== 
+==================================*/
+.interets {
+    grid-area: interets;
+    border-radius: 3px;
 }
+
 /*===================================
 ===contenus de la partie portfolio===
 ===================================*/
 .portfolio {
     color: black;
     grid-area: portfolio;
+    border-radius: 3px;
     padding: 10px;
 }
 
@@ -110,48 +118,29 @@ h3 {
 footer {
     grid-area: footer;
 
+    border-radius: 3px;
     justify-content: space-around;
     align-items: center;
     font-size: 50px;
     display: flex;
 }
 
-.github > a {
+.github>a {
     color: #7f8c8d;
 }
 
-.linkedin > a {
+.linkedin>a {
     color: #7f8c8d;
 }
 
-.pdf > a {
+.pdf>a {
     color: #7f8c8d;
 }
 
-/* config pour les ecrants d'une largeur > a 576px  */
-@media (min-width: 567px) {
-    .cont {
-
-        display: grid;
-        padding: 0px;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 50px 1fr 300px 300px 1fr 1fr 20%;
-
-        row-gap: 10px;
-
-        grid-template-areas: "nav"
-            "head"
-            "pres"
-            "diplomes"
-            "competences"
-            "interets"
-            "portfolio"
-            "footer"
-        ;
-    }
-}
-
+/* =============================================== */
 /* config pour les ecrants d'une largeur > a 768px */
+/* =============================================== */
+
 @media (min-width: 768px) {
     .cont {
 
@@ -159,7 +148,7 @@ footer {
         padding: 0px;
 
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto 1fr 250px 400px auto auto;
 
         row-gap: 15px;
 
@@ -168,35 +157,45 @@ footer {
             "pres pres"
             "diplomes diplomes"
             "competences competences"
-            "interets interets"
-            "portfolio portfolio"
+            "interets portfolio"
             "footer footer"
         ;
     }
+
+    .carousel-item {
+        padding: 0px 50px;
+    }
 }
 
+/* =============================================== */
 /* config pour les ecrants d'une largeur > à 992px */
+/* =============================================== */
+
 @media (min-width: 992px) {
     .cont {
 
         display: grid;
         padding: 0px;
 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2000px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 15% 1fr 1fr 15%;
+        grid-template-rows: auto auto auto 300px 400px auto auto;
 
         row-gap: 15px;
+        column-gap: 10px;
 
-        grid-template-areas: "head head"
-            "nav nav"
-            "pres pres"
-            "diplomes diplomes"
-            "competences competences"
-            "interets interets"
-            "portfolio portfolio"
-            "footer footer"
+        grid-template-areas:
+            "head head head head "
+            ". nav nav ."
+            ". pres pres ."
+            ". diplomes diplomes ."
+            ". competences competences ."
+            ". interets portfolio ."
+            "footer footer footer footer  "
         ;
 
     }
 
+    .carousel-item {
+        padding: 0px 100px;
+    }
 }

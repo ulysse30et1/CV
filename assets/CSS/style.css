@@ -70,6 +70,7 @@ nav {
 /* ======================================= */
 /* ===contenus de la partie compétences=== */
 /* ======================================= */
+
 .comp {
     color:#18587a;
     margin-bottom: 200px;
@@ -89,6 +90,7 @@ nav {
     border-radius: 3px;
     padding: 10px;
     text-align: center;
+    margin-bottom: 150px;
 }
 
 .fa-raspberry-pi,
@@ -107,7 +109,7 @@ nav {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 4fr ;
     column-gap: 10px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 
 .titre-portfolio {
@@ -118,17 +120,19 @@ nav {
 
 .img {
     background-color: #18587a;
-    height: 300px;
+    height: 370px;
     grid-row: 2;
 }
 
 img {
-    height: 260px;
+    width: 100%;
+    height: 100%;
 }
 
 /*================================
 ===contenus de la partie footer===
 ================================*/
+
 footer {
     grid-area: footer;
     border-radius: 3px;
@@ -173,7 +177,6 @@ footer {
     ;
 }
 
-
 /* =============================================== */
 /* config pour les ecrants d'une largeur > a 768px */
 /* =============================================== */
@@ -214,7 +217,7 @@ footer {
         padding: 0px;
 
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 70vh auto 50vh 300px auto  auto;
+        grid-template-rows: auto 70vh auto 50vh auto auto  auto;
 
         grid-template-areas:
             "nav nav"
@@ -225,7 +228,6 @@ footer {
             "interets interets"
             "footer footer"
         ;
-
     }
 
     .carousel-item {

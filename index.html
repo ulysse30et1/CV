@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        
+
     <link rel="stylesheet" href="assets/CSS/style.css">
 
     <!-- font awesome -->
@@ -25,23 +25,29 @@
         ===header=== 
         =========-->
 
-        <header class="bg-dark ">
-            <h1>CV | Ulysse Chazot</h1>
-            <p> 171 chaussée St Pierre 80000 Amiens</br>
-                06 52 64 10 81</br>
-                ulysse.chazot@gmail.com</br>
-                18 ans</p>
+        <header>
+            <div class="titre-cv">
+                <h1>Developpeur web web mobile</h1>
+            </div>
+
+            <div class="info-contact">
+                <h2>Ulysse Chazot</h2>
+                <p> 06 52 64 10 81</br>
+                    ulysse.chazot@gmail.com</br>
+                    18 ans</p>
+            </div>
         </header>
+
         <!--=========================
         ======menu de navigation=====
         ==========================-->
 
-        <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+        <nav class="navbar sticky-top navbar-expand-md navbar-light">
             <a class="navbar-brand" href="#"><i class="fas fa-chevron-up ico-up"></i></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon "></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -62,22 +68,11 @@
             </div>
         </nav>
 
-        <!--=====================
-        ===simple presentation=== 
-        ======================-->
-
-        <!-- <div class="presentation bg-dark">
-            <h2>présentation personnel</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, doloremque pariatur rerum rem nihil
-                dolor provident praesentium aut. Laudantium natus hic voluptates ab? Corrupti consectetur, eveniet
-                accusantium quas nostrum sed.</p>
-        </div> -->
-
         <!--=======================
         ===carousel des diplomes===
         ========================-->
 
-        <div id="diplomes" class=" carousel slide bg-dark" data-ride="carousel">
+        <div id="diplomes" class=" carousel slide " data-ride="carousel">
             <!-- titre du carousel-->
             <div>
                 <h2>diplomes</h2>
@@ -122,104 +117,77 @@
         </div>
 
         <!--==========================  
-        ===carousel des competances===
+        ======== competances =========
         ===========================-->
 
-        <div id="compétences" class=" carousel slide bg-dark" data-ride="carousel">
-            <!-- titre du carousel -->
-            <div>
-                <h2>compétences</h2>
-            </div>
-            <!-- indicateur de position des tuiles -->
-            <ol class="carousel-indicators">
-                <li data-target="#compétences" data-slide-to="0" class="active"></li>
-                <li data-target="#compétences" data-slide-to="1"></li>
-                <li data-target="#compétences" data-slide-to="2"></li>
-            </ol>
+        <div id="competences">
+            <h2 class="titre-general-competences">Compétences</h2>
+            <h3 class="tire-comp">Système d'exploitation </h3>
+            <div class="comp">
 
-            <!-- contenus des tuiles -->
-            <div class="carousel-inner pl-5 pr-5">
-                <div class="carousel-item active">
-
-                    <h3>Système d'exploitation </h3>
-
-                    <p class="align-self-start text-danger">Linux</p>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 60%;">60%</div>
-                    </div>
-
-                    <p class="align-self-start text-danger">Windows</p>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 70%;">70%</div>
-                    </div>
-
-                    <p class="align-self-start text-danger">Mac OS</p>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 40%;">40%</div>
-                    </div>
+                <p>Linux</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%;">60%</div>
                 </div>
 
-                <div class="carousel-item">
-                    <h3>Langages de programmation</h3>
-
-                    <p class="align-self-start text-danger">HTML/CSS</p>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 50%;">50%</div>
-                    </div>
-
-                    <p class="align-self-start text-danger">PHP</p>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 10%;">10%</div>
-                    </div>
-
-                    <p class="align-self-start text-danger">C</p>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 40%;">40%</div>
-                    </div>
-
-                    <p class="align-self-start text-danger">Java-Script</p>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 20%;">20%</div>
-                    </div>
-
+                <p>Windows</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;">70%</div>
                 </div>
 
-                <div class="carousel-item">
-                    <h3>Logiciels</h3>
-
-                    <p class="align-self-start text-danger">Visual Studio Code</p>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 65%;">65%</div>
-                    </div>
-
-                    <p class="align-self-start text-danger">Vim</p>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 40%;">40%</div>
-                    </div>
-
-                    <p class="align-self-start text-danger">Adobe Xd</p>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 50%;">50%</div>
-                    </div>
+                <p>Mac OS</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 40%;">40%</div>
                 </div>
             </div>
 
-            <!-- boutons de defilement du carousel -->
-            <a class="carousel-control-prev" href="#compétences" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#compétences" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <h3 class="tire-comp">Langages de programmation</h3>
+            <div class="comp">
+
+                <p>HTML/CSS</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%;">50%</div>
+                </div>
+
+                <p>PHP</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 10%;">10%</div>
+                </div>
+
+                <p>C</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 40%;">40%</div>
+                </div>
+
+                <p>Java-Script</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 20%;">20%</div>
+                </div>
+            </div>
+            <h3 class="tire-comp">Logiciels</h3>
+            <div class="comp">
+
+                <p>Visual Studio Code</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 65%;">65%</div>
+                </div>
+
+                <p>Vim</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 40%;">40%</div>
+                </div>
+
+                <p>Adobe Xd</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%;">50%</div>
+                </div>
+            </div>
         </div>
-
         <!--==========================
         ===partie centre d'interets===
         ===========================-->
 
-        <div id="mes_centres_d_intérêt" class="interets bg-dark">
+        <div id="mes_centres_d_intérêt" class="interets">
             <h2>mes centres d'intérêt</h2>
             <p>Informatique et nouvelle technologies <i class="fab fa-raspberry-pi"></i></p>
             <p>Jeux de strategies et casse têtes (Rubik's cube) <i class="fas fa-chess"></i></p>
@@ -230,72 +198,22 @@
         ===partie portfolio/presentation de mon travaille===
         =================================================-->
 
-        <div class="portfolio container-fluid bg-dark">
-            <div class="list-group">
+        <div id="portfolio">
+            <h2 class="titre-portfolio">portfolio</h2>
+                <a class="img" href="https://ulysse30et1.github.io/formation_DWWM_projet_de_groupe/">
 
-                <!-- Modal projet de groupe 1 -->
-                <button type="button" class="list-group-item list-group-item-action" data-toggle="modal"
-                    data-target="#modalFleuriste">site vitrine pour un
-                    fleuriste</button>
+                </a>
 
-                <div class="modal fade" id="modalFleuriste" tabindex="-1" role="dialog"
-                    aria-labelledby="modalFleuristeLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="modalFleuristeLabel">site vitrine pour fleuriste</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                Exercice dans le cadre de ma formation à la MANU. <br />
-                                Projet de groupe visant à créer un site vitrine non responsive pour un fleuriste.
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Retour</button>
-                                <a href="https://ulysse30et1.github.io/formation_DWWM_projet_de_groupe/"
-                                    class="btn btn-primary btn active" role="button" aria-pressed="true">Liens vers le
-                                    site</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal projet de groupe 2 -->
-                <button type="button" class="list-group-item list-group-item-action" data-toggle="modal"
-                    data-target="#modal2">responsive web</button>
+            <a class="img" href="https://ulysse30et1.github.io/formation_DWWM_projet_de_groupe_responsiveWeb/">
+            </a>
 
-                <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2label"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="modal2label">responsive web</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                Exercice dans le cadre de ma formation à la MANU. <br />
-                                Projet de groupe visant à rendre un site web donné responsive.
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Retour</button>
-                                <a href="https://ulysse30et1.github.io/formation_DWWM_projet_de_groupe_responsiveWeb/"
-                                    class="btn btn-primary btn active" role="button" aria-pressed="true">Liens
-                                    vers le site</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a class="img" href="#"></a>
         </div>
-
         <!--========================================
         ===footer / liens vers les reseau sociaux===
         =========================================-->
 
-        <footer id="reseaux" class="bg-dark">
+        <footer id="reseaux">
             <div class="github">
                 <a href="https://github.com/ulysse30et1" title="liens vers mon github" target="_blank"><i
                         class="fab fa-github"></i></a>

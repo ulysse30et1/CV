@@ -1,17 +1,18 @@
-/* configuaration pour un ecrant de smartphone */
+/* configuaration generale */
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    background-color: #7f8c8d;
-    color: white;
+    background-color: #f6f7d7;
+    background-image: linear-gradient(#3ec1d3, #f6f7d7);
+    color: #18587a;
     text-align: justify;
 }
 
 time {
-    color: #5cb85c;
-}
-
-h3 {
-    font-size: 17px;
+    color: #ff165d;
 }
 
 /* ===================== 
@@ -19,33 +20,40 @@ h3 {
 ===================== */
 header {
     grid-area: head;
-    border-radius: 3px;
-    padding: 0 10px 0 10px;
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: 40% 1fr;
+}
+
+.info-contact {
+    grid-row: 1;
+    grid-column: 1;
+    margin: 30px;
+}
+
+.titre-cv {
+    text-align: center;
+    grid-row: 2;
+    grid-column: 2;
 }
 
 /*===============================
 ===contenus de la barre de nav===
 ===============================*/
 nav {
+    background-color: #3ec1d3;
+    background-image: linear-gradient(#3ec1d3, #f6f7d7);
     grid-area: nav;
     border-radius: 3px;
     box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.3);
 }
 
-
 /* icone de retour sur la barre de nav */
 .ico-up {
     padding: 3px;
-    border: white 2px solid;
-}
-
-/* ======================================== */
-/* ===contenus de la partie presentation=== */
-/* ======================================== */
-
-.presentation {
-    grid-area: pres;
-    padding: 0 15px 0 15px;
+    color: #18587a;
+    border: #18587a 2px solid;
+    border-radius: 45%;
 }
 
 /* ==================================== */
@@ -56,31 +64,26 @@ nav {
     grid-area: diplomes;
     border-radius: 3px;
     text-align: center;
+    margin-bottom: 200px;
 }
 
 /* ======================================= */
 /* ===contenus de la partie compétences=== */
 /* ======================================= */
-#compétences {
-    grid-area: competences;
-    border-radius: 3px;
-    text-align: center;
+.comp {
+    color:#18587a;
+    margin-bottom: 200px;
 }
 
-#compétences>.carousel-inner>.carousel-item>p {
-    border: solid 1px;
-    border-radius: 20px;
-    margin: 5px 0px 5px 0px;
-}
-
-.progress {
-    margin-bottom: 25px;
-    background-color: #34495e;
+.progress-bar {
+    color: #b83b5e;
+    background-color: #f08a5d;
 }
 
 /*==================================
 ===contenus de la partie interets=== 
 ==================================*/
+
 .interets {
     grid-area: interets;
     border-radius: 3px;
@@ -91,18 +94,36 @@ nav {
 .fa-raspberry-pi,
 .fa-chess,
 .fa-pencil-alt {
-    color: #5cb85c;
     font-size: larger;
 }
 
 /*===================================
 ===contenus de la partie portfolio===
 ===================================*/
-.portfolio {
-    color: black;
+
+#portfolio {
     grid-area: portfolio;
-    border-radius: 3px;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 4fr ;
+    column-gap: 10px;
+    margin-bottom: 200px;
+}
+
+.titre-portfolio {
+    grid-row: 1;
+    grid-column: 2;
+    text-align: center;
+}
+
+.img {
+    background-color: #18587a;
+    height: 300px;
+    grid-row: 2;
+}
+
+img {
+    height: 260px;
 }
 
 /*================================
@@ -110,7 +131,6 @@ nav {
 ================================*/
 footer {
     grid-area: footer;
-
     border-radius: 3px;
     justify-content: space-around;
     align-items: center;
@@ -119,15 +139,15 @@ footer {
 }
 
 .github>a {
-    color: #7f8c8d;
+    color: #ff9a00;
 }
 
 .linkedin>a {
-    color: #7f8c8d;
+    color: #ff9a00;
 }
 
 .pdf>a {
-    color: #7f8c8d;
+    color: #ff9a00;
 }
 
 
@@ -145,7 +165,6 @@ footer {
 
     grid-template-areas: "nav"
         "head"
-        /* "pres" */
         "diplomes"
         "competences"
         "interets"
@@ -161,7 +180,6 @@ footer {
 
 @media (min-width: 768px) {
     .cont {
-
         display: grid;
         padding: 0px;
 
@@ -170,9 +188,9 @@ footer {
 
         row-gap: 15px;
 
-        grid-template-areas: "head head"
+        grid-template-areas:
             "nav nav"
-            /* "pres pres" */
+            "head head"
             "diplomes diplomes"
             "competences competences"
             "interets portfolio"
@@ -195,25 +213,48 @@ footer {
         display: grid;
         padding: 0px;
 
-        grid-template-columns: 15% 1fr 1fr 15%;
-        grid-template-rows: auto auto 300px 400px auto auto;
-
-        row-gap: 15px;
-        column-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 70vh auto 50vh 300px auto  auto;
 
         grid-template-areas:
-            "head head head head "
-            ". nav nav ."
-            /* ". pres pres ." */
-            ". diplomes diplomes ."
-            ". competences competences ."
-            ". interets portfolio ."
-            "footer footer footer footer  "
+            "nav nav"
+            "head head"
+            "diplomes diplomes"
+            "competences competences"
+            "portfolio portfolio"
+            "interets interets"
+            "footer footer"
         ;
 
     }
 
     .carousel-item {
         padding: 0px 100px;
+    }
+
+    /* === config partie competences pour ecrant larges ===  */
+
+    #competences {
+        border-radius: 3px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2fr 2fr  5fr;
+        grid-area: competences;
+    }
+    
+    .titre-general-competences {
+        grid-column: 2;
+        text-align: center;
+    }
+    
+    .tire-comp {
+        text-align: center;
+        grid-row: 2;
+    }
+    
+    .comp {
+        grid-row: 3;
+        text-align: center;
+        padding: 10px;
     }
 }

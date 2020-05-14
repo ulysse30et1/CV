@@ -64,7 +64,6 @@ nav {
     grid-area: diplomes;
     border-radius: 3px;
     text-align: center;
-    margin-bottom: 200px;
 }
 
 /* ======================================= */
@@ -163,16 +162,14 @@ footer {
     display: grid;
     padding: 0px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 250px 400px auto auto 75px;
-
-    row-gap: 10px;
+    grid-template-rows: auto auto auto auto auto auto auto;
 
     grid-template-areas: "nav"
         "head"
         "diplomes"
         "competences"
-        "interets"
         "portfolio"
+        "interets"
         "footer"
     ;
 }
@@ -187,19 +184,26 @@ footer {
         padding: 0px;
 
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto 250px 400px auto auto;
-
-        row-gap: 15px;
+        grid-template-rows: auto auto 250px auto auto auto auto;
 
         grid-template-areas:
             "nav nav"
             "head head"
             "diplomes diplomes"
             "competences competences"
-            "interets portfolio"
+            "portfolio portfolio"
+            "interets interets"
             "footer footer"
         ;
     }
+
+   /* #competences {
+        border-radius: 3px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2fr 2fr  5fr 2fr 5fr;
+        grid-area: competences;
+    } */
 
     .carousel-item {
         padding: 0px 50px;
@@ -232,6 +236,10 @@ footer {
 
     .carousel-item {
         padding: 0px 100px;
+    }
+
+    #diplomes {
+        margin-bottom: 200px;
     }
 
     /* === config partie competences pour ecrant larges ===  */

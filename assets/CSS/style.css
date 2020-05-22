@@ -20,15 +20,16 @@ header {
     grid-area: head;
     display: grid;
     grid-template-rows: 1fr 2fr;
+    row-gap: 50px;
 
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 
 .name {
     grid-row: 1;
 }
 
-.title{
+.title {
     grid-row: 2;
     text-align: center;
 }
@@ -66,13 +67,18 @@ nav {
 /* ======================================= */
 /* ===contenus de la partie compétences=== */
 /* ======================================= */
-#competences{
-    margin: 0 10px ;
+#competences {
+    margin: 0 10px;
     text-align: start;
     margin-bottom: 150px;
 }
 
-#competences>h3,h2 {
+.title-diplo {
+    grid-area: title-diplo;
+    text-align: center;
+}
+
+#competences>h3,titre-general-competences {
     margin-bottom: 40px;
 }
 
@@ -82,8 +88,8 @@ nav {
 }
 
 .progress-bar {
-    color: #ff165d;
-    background-color: #f08a5d;
+    color: #690375;
+    background-color: #ff9a00;
 }
 
 /*==================================
@@ -114,13 +120,13 @@ nav {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px 1fr 1fr;
 
-    grid-template-areas: 
-    "titre titre"
-    "img1 img2"
-    "img3 img4";
+    grid-template-areas:
+        "titre titre"
+        "img1 img2"
+        "img3 img4";
     column-gap: 10px;
     row-gap: 10px;
-    margin: 0 10px 150px 10px ;
+    margin: 0 10px 150px 10px;
 }
 
 .titre-portfolio {
@@ -128,19 +134,19 @@ nav {
     grid-area: titre;
 }
 
-.img1{
+.img1 {
     grid-area: img1;
 }
 
-.img2{
+.img2 {
     grid-area: img2;
 }
 
-.img3{
+.img3 {
     grid-area: img3;
 }
 
-.img4{
+.img4 {
     grid-area: img4;
 }
 
@@ -191,6 +197,7 @@ footer {
 
     grid-template-areas: "nav"
         "head"
+        "title-diplo"
         "diplomes"
         "competences"
         "portfolio"

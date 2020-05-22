@@ -13,6 +13,9 @@ time {
     color: #ff165d;
 }
 
+p {
+    margin: 20px 0 5px 5px;
+}
 /* ===================== 
 ===contenus du header===
 ===================== */
@@ -68,7 +71,7 @@ nav {
 /* ===contenus de la partie compétences=== */
 /* ======================================= */
 #competences {
-    margin: 0 10px;
+    /*margin: 0 10px;*/
     text-align: start;
     margin-bottom: 150px;
 }

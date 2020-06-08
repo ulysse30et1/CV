@@ -1,8 +1,10 @@
 html {
+    /* scroll des encres plus doux */
     scroll-behavior: smooth;
 }
 
 body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* background-color: #f6f7d7; */
     /* background-image: linear-gradient(#3ec1d3, #f6f7d7); */
     background-image:url("../images/code.jpg");
@@ -21,6 +23,10 @@ p {
 
 a {
     color: #8ad81d;
+}
+/* empecher le surligniage des liens  */
+a:hover {
+    text-decoration: none;
 }
 
 /* ===================== 
@@ -150,7 +156,7 @@ titre-general-competences {
         "img3 img4";
     column-gap: 10px;
     row-gap: 10px;
-    margin: 0 10px 150px 10px;
+    margin: 0 10px 150px 10px;  
 }
 
 .titre-portfolio {
@@ -160,14 +166,20 @@ titre-general-competences {
 
 .img1 {
     grid-area: img1;
+    background-image: url("../images/original_flower.jpg");
+    background-size: cover;
 }
 
 .img2 {
     grid-area: img2;
+    background-image: url("../images/hanami-sushi.png");
+    background-size: cover;
 }
 
 .img3 {
     grid-area: img3;
+    background-image: url("../images/grain.jpg");
+    background-size: cover;
 }
 
 .img4 {
@@ -175,14 +187,21 @@ titre-general-competences {
 }
 
 .img {
-    height: 100%;
-}
-
-img {
-    width: 100%;
-    height: 100%;
+    height: 200px;
     border-radius: 20px;
     border: 3px solid black;
+
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+/* afficher une ombre au survol du text */
+.img:hover {
+    transform:scale(1.2);
+    text-shadow:5px 5px 4px black;
+    border: none;
+    text-decoration: none;
 }
 
 /*================================
@@ -216,7 +235,7 @@ footer {
         "portfolio"
         "interets"
         "footer"
-    ;
+    ;   
 }
 
 /* pour les ecrant large / pc ( > 1000 px) */
@@ -272,5 +291,10 @@ footer {
         column-gap: 10px;
         row-gap: 10px;
         margin: 0 10px 150px 10px;
+    }
+
+    .img {
+        height: 400px;
+        font-size: xx-large;
     }
 }

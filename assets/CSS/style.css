@@ -113,8 +113,11 @@ titre-general-competences {
 }
 
 .progress {
+    height: 25px;
+
     background-color: #7ff38f;
     box-shadow: 0px 5px 0px #10002b;
+    border: solid black;
     border-radius: 50px;
 }
 
